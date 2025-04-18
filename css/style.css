@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto';
+}
+
+.container{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/* header */
+
+header{
+    background-image: url(../images/bg.jpg);
+    min-height: 450px;
+    padding: 30px 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo{
+    background-image: url(../images/logo.png);
+    background-size: 100% 100%;
+    float: left;
+    width: 132px;
+    height: 20px;
+   
+}
+
+.logo2{
+    background-image: url(../images/logo.png);
+    background-size: 100% 100%;
+    width: 132px;
+    height: 20px;
+    z-index: 999;
+    margin: 20px auto;
+}
+
+
+nav.desktop{
+    float: right;
+}
+
+nav.desktop ul{
+    list-style-type: none;
+}
+
+nav.desktop li{
+    display: inline-block;
+    margin: 0 15px;
+
+}
+
+nav.desktop a{
+    color: white;
+    text-decoration: none;
+}
+
+nav.desktop a:hover{
+    color:  #ff5f27;
+}
+
+nav.mobile a:hover{
+    color: #ff5f27;
+}
+
+nav li.btn_nav{
+    padding: 3px 8px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+nav li.btn_nav:hover{
+    background-color: #ff5f27;
+}
+
+nav li.btn_nav a:hover{
+    color: white;
+}
+
+nav.mobile{
+    display: none;
+    float: right;
+}
+
+nav.mobile h3{
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+   }
+
+
+nav.mobile ul{
+    display: none;
+    background-color: #31475e;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+}
+
+nav.mobile li{
+    padding: 10px 0;
+}
+
+
+nav.mobile li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+
+nav.mobile li.btn_nav{
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+div.chamada_header{
+    padding: 110px 0;
+}
+
+div.chamada_header h2{
+    font-size: 47px;
+    color: white;
+    font-weight: normal;
+}
+
+div.chamada_header p{
+    font-size: 17px;
+    color: white;
+    margin-top: 10px;
+    max-width: 600px;
+}
+
+div.chamada_header input[type=email]{
+    display: inline-block;
+    border-radius: 100px;
+    background: white;
+    width: 237px;
+    height: 35px;
+    border: 0;
+    padding-left: 10px;
+}
+
+
+div.chamada_header input[type=email]:focus{
+    outline: 0;
+}
+
+div.chamada_header form{
+    margin-top: 10px;
+}   
+
+div.chamada_header input[type=submit]{
+    display: inline-block;
+    border-radius: 100px;
+    background: #ff5f27;
+    color: white;
+    width: 181px;
+    height:35px;
+    border: 0;
+    cursor: pointer;
+}
+
+div.chamada_header input[type=submit]:hover{
+    background: #e14c16;
+}
+
+section.descricao_danki{
+    text-align: center;
+    padding: 70px 0;
+}
+
+section.descricao_danki p{
+    font-weight: lighter;
+    font-size: 22px;
+    font-style: italic;
+    display: inline-block;
+    max-width: 680px;
+    margin-top: 30px;
+}
+
+section.descricao_danki2{
+    padding: 70px 0;
+}
+
+section.descricao_danki2 .container{
+    max-width: 920px;
+}
+
+.texto_descricao{
+    padding: 15px 0;
+    float: left;
+    width: 55%;
+}
+
+.texto_descricao h3{
+    color: #31475e;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: normal;
+}
+
+.texto_descricao p{
+    color: #6a7c92;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 15px;
+}
+
+section.descricao_danki2 img{
+    float: left;
+    width: 45%;
+    max-width: 500px;
+}
+
+section.descricao_danki3{
+    padding: 30px 0;
+    position: relative;
+}
+
+section.descricao_danki3 .container{
+    max-width: 960px;
+    background-image: url('../images/bg2.jpg');
+    min-height: 350px;
+    background-size: cover;
+}
+
+.box_depoimento{
+    position: absolute;
+    left: 40%;
+    bottom: -30px;
+    width: 70%;
+    max-width: 506px;
+    background-color: white;
+    padding: 30px 30px;
+    box-shadow: 0 8px 20px 0 rgba(224,224,224,0.5);
+}
+
+
+.box_depoimento p{
+    font-size: 18px;
+    color: #31475e;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+@media screen and (max-width:1024px){
+    nav.desktop{
+        display: none;
+    }
+
+    nav.mobile{
+        display: block;
+    }
+
+    div.chamada_header{
+        text-align: center;
+    }
+
+    div.chamada_header input[type=email]{
+        margin-bottom: 30px;
+    }
+
+    div.chamada_header p{
+        display: inline-block;
+    
+    }
+
+    .box_depoimento{
+        left: 50%;
+        top: 50%;
+        bottom: auto;
+        transform: translate(-50% , -50%);
+        width: 80%;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    
+    .texto_descricao{
+        width: 100%;
+        text-align: center;
+        display: block;
+        float: none;
+    }
+    
+    section.descricao_danki2 img{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        float: none;
+    }
+
+    section.descricao_danki3 .container{
+        min-height: 480px;
+    }
+}
