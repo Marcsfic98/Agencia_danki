@@ -327,6 +327,28 @@ section.servicos .container{
     margin-top: 10px;
 }
 
+section.portfolio{
+    padding: 20px 0;
+    background: white;
+}
+
+section.portfolio h2{
+    font-weight: normal;
+    text-align: center;
+    color: #31475e;
+}
+
+section.portfolio .container{
+    max-width: 960px;
+    padding: 15px 0;
+    background-color: #f7f7f7;
+}
+
+
+
+
+
+
 @media screen and (max-width:1024px){
     nav.desktop{
         display: none;
