@@ -444,6 +444,34 @@ section.formulario textarea{
         margin-top: 10px;
     }
 
+    .box_footer button{
+        width: calc(20% - 10px);
+        margin-left: 10px;
+        max-width: 63px;
+        height: 43px;
+        border: 1px solid #31475e;
+        border-radius: 50px;
+        background: white;
+     
+    }
+
+    .box_footer button i{
+        color: #31475e;
+    }
+
+    .box_footer input{
+        width: 80%;
+        max-width: 208px;
+        height: 43px;
+        border-radius: 100px;
+        background-color: white;
+        border: 1px solid #bfbfbf;
+        padding-left: 10px;
+    }
+
+    .box_footer input:focus{
+        outline: 0;
+    }
 @media screen and (max-width:1024px){
     nav.desktop{
         display: none;
