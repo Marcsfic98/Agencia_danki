@@ -333,6 +333,7 @@ section.portfolio{
 }
 
 section.portfolio h2{
+    margin: 30px 0;
     font-weight: normal;
     text-align: center;
     color: #31475e;
@@ -344,10 +345,104 @@ section.portfolio .container{
     background-color: #f7f7f7;
 }
 
+.empresas{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 8  0px;
+}
+
+.empresas_single{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    padding: 30px 20px;
+}
+section.formulario{
+    padding: 30px 0;
+
+}
+
+section.formulario h2{
+    text-align: center;
+    font-size: 22px;
+    font-weight: normal;
+    color: #31475e;
+}
+
+section.formulario form{
+    margin-top: 10px;
+
+}
+section.formulario .container{
+    max-width: 960PX;
+}
+
+section.formulario input[type=text]{
+    width: 100%;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    padding-left: 10PX;
+}
+
+section.formulario input[type=text]:focus{
+    outline: 0;
+}
 
 
+section.formulario textarea{
+    width: 100%;
+    height: 120px;
+    resize: vertical;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    padding: 10px 20px;
+}
+
+    section.formulario input[type=submit]{
+        width: 130px;
+        height: 38px;
+        color: white;
+        cursor: pointer;
+        border: 0;
+        border-radius: 100px;
+        background-color: #ff5f27;
+        box-shadow: 0 8px 20px 0 rgba(224,224,224,0.5);
+        display: block;
+        margin: 30px auto;
+    }
 
 
+    footer{
+        padding: 50px 0;
+    }
+
+    .box_footer{
+        float: left;
+        width: 33.3%;
+        padding: 0 15px;
+    }
+
+    .box_footer h2{
+        color: #31475e;
+        font-size: 22px;
+        font-weight: normal;
+    }
+
+    .box_footer p{
+        color: #31475e;
+        font-size: 15px;
+        font-weight: 300;
+        margin-top: 10px;
+        line-height: 52px;
+    }
+
+    .box_footer form{
+        margin-top: 10px;
+    }
 
 @media screen and (max-width:1024px){
     nav.desktop{
@@ -406,5 +501,17 @@ section.portfolio .container{
         width: 100%;
         max-width: 450px;
         margin: 30px auto;
+    }
+
+    .empresas_single{
+        width: 100%;
+        max-width: 640px;
+        margin: 15px auto;
+    }
+
+    .box_footer{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
     }
 }
